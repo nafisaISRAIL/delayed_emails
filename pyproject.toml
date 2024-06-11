@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "delayed-email"
+version = "0"
+description = "API to manage delayed email service"
+authors = ["Nafisa Iuldasheva <nafisa.iuldasheva@gcore.lu>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.109.2"}
+pydantic = {extras = ["email"], version = "^2.6.1"}
+uvicorn = "^0.27.1"
+black = "^24.2.0"
+isort = "^5.13.2"
+pydantic-settings = "^2.2.1"
+pymongo = "^4.6.2"
+motor = "^3.3.2"
+fastapi-utilities = "^0.2.0"
+aio-pika = "^9.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
